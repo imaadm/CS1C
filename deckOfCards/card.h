@@ -56,6 +56,8 @@ class Card
 		Card left[26];
 		Card right[26];
 		int o = 0;
+		int l = 0;
+		int r = 0;
 		for (int i = 0; i < 26; i++)
 		{
 			left[i] = cards[i];
@@ -68,9 +70,15 @@ class Card
 
 		for (int j = 0; j < 52; j++)
 		{
-			cards[j] = left[j];
-			if (j < 51)
-				cards[j + 1] = right[j];
+			if (l < 26)
+			{
+				cards[j] = left[l];
+				l++;
+			}
+			if (r < 26)
+			{
+				cards[j] = right[r];
+			}
 		}
 	}
 };
