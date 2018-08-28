@@ -9,17 +9,19 @@ using namespace std;
 
 int main()
 {
-    Card deck[52];
-    deck[52].createDeck(deck);
+	const int DECK_SIZE = 52;
+    Card deck[DECK_SIZE];
+
+    deck[DECK_SIZE].createDeck(deck);
 
     cout << "Printing deck..." << endl;
-    deck[52].printDeck(deck);
+    deck[DECK_SIZE].printDeck(deck);
 
     system("clear");
 
     cout << "Shuffling deck..." << endl;
-    deck[52].shuffleDeck(deck);
+    deck[DECK_SIZE].shuffleDeck(deck);
 
     cout << "Printing deck..." << endl;
-    deck[52].printDeck(deck);
+    deck[DECK_SIZE].printDeck(deck);
 }

@@ -1,2 +1,2 @@
-hw02: hw02.cpp card.h
-	g++ hw02.cpp card.h -o
+all: hw02.cpp card.cpp card.h
+	g++ *.cpp card.h 
