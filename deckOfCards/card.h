@@ -1,8 +1,7 @@
 //files needed:
-//co
 //card.h
-//card.cpp
-//hw02.cpp (console io)
+//console.io
+//hw02.cpp 
 //makefile
 
 #include <iomanip>
