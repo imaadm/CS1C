@@ -27,7 +27,7 @@ void Card::createDeck(Card cards[])
 			cout << cards[i].rank << " of " << cards[i].suit << endl;
 		}
 	}
-
+	
 	void Card::shuffleDeck(Card cards[])
 	{
 		Card left[26];
