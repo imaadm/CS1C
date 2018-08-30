@@ -14,15 +14,15 @@ class Card
 {
   private:
 	string suit;
-	char rank;
+	string rank;
   public:
 	Card()
 	{
 		suit = "\n";
-		rank = '\0';
+		rank = "\n";
 	}
 
-	Card(string s, char r)
+	Card(string s, string r)
 	{
 		suit = s;
 		rank = r;
@@ -30,4 +30,5 @@ class Card
 	void createDeck(Card cards[]);
 	void printDeck(Card cards[]);
 	void shuffleDeck(Card cards[]);
+
 };

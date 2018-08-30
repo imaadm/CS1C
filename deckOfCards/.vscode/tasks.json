@@ -10,6 +10,7 @@
             "args": [
                 "-g",
                 "hw02.cpp",
+                "card.cpp",
                 "card.h"
             ],
             "group": {

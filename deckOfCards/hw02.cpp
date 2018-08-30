@@ -14,14 +14,24 @@ int main()
 
     deck[DECK_SIZE].createDeck(deck);
 
-    cout << "Printing deck..." << endl;
+    cout << "Initial deck:" << endl;
     deck[DECK_SIZE].printDeck(deck);
 
-    system("clear");
-
-    cout << "Shuffling deck..." << endl;
+    //system("clear");
+    cout << endl;
+    cout << "Shuffling deck...";
     deck[DECK_SIZE].shuffleDeck(deck);
 
-    cout << "Printing deck..." << endl;
+    cout << endl;
+    cout << "Shuffled deck:" << endl;
+    deck[DECK_SIZE].printDeck(deck);
+
+    cout << endl;
+    cout << "For the deck to return to normal, it will require 8 total shuffles.";
+    for (int i = 0; i < 7; i++)
+        deck[DECK_SIZE].shuffleDeck(deck);
+    
+    cout << endl << endl;
+    cout << "Final deck:" << endl;
     deck[DECK_SIZE].printDeck(deck);
 }
