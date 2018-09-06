@@ -1,4 +1,5 @@
-
+#ifndef _SOFTH_
+#define _SOFTH_
 #include <string>
 #include <iostream>
 #include "date.h"
@@ -23,7 +24,8 @@ class Architect:public Employee
         experience = 0;
     }
 
-    Architect(int d, string super, int per, int ex, string n,int i,string p,int a, string t,string s):Employee(n,i,p,a,t,s)
+    Architect(int d, string super, int per, int ex, string n,int i,string p,int a, string t,string s,int y, int m, int day)
+    :Employee(n,i,p,a,t,s,y,m,d)
     {
         dept = d;
         sup = super;
@@ -38,3 +40,5 @@ class Architect:public Employee
 
     }
 };
+
+#endif

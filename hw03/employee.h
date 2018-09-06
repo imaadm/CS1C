@@ -1,8 +1,9 @@
+#ifndef _EMPLOYH_
+#define _EMPLOYH_
 
 #include <string>
 #include <iostream>
 #include "date.h"
-
 using namespace std;
 
 class Employee
@@ -26,7 +27,7 @@ class Employee
         title = "Student";
         salary = "$0";
     }
-    Employee(string n,int i,string p,int a, string t,string s)
+    Employee(string n,int i,string p,int a, string t,string s,int y,int m,int day)
     {
         name = n;
         id = i;
@@ -34,38 +35,39 @@ class Employee
         age = a;
         title = t;
         salary = s;
+        hire.editDate(y,m,day);
     }
 
-    string editName(string n)
+    void editName(string n)
     {
         name = n;
     }
 
-    int editId(int i)
+    void editId(int i)
     {
         id = i;
     }
 
-    string editPhone(string p)
+    void editPhone(string p)
     {
         phone = p;
     }
 
-    int editAge(int a)
+    void editAge(int a)
     {
         age = a;
     }
-    string editTitle(string t)
+    void editTitle(string t)
     {
         title = t;
     }
 
-    int editSalary(string s)
+    void editSalary(string s)
     {
         salary = s;
     }
     
-    string editHire(Date h)
+    void editHire(Date h)
     {
         hire = h;
     }
@@ -76,3 +78,4 @@ class Employee
         hire.printDate();
     }
 };
+#endif

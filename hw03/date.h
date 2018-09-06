@@ -1,4 +1,5 @@
-
+#ifndef _DATEH_
+#define _DATEH_
 #include <string>
 #include <iostream>
 
@@ -29,4 +30,12 @@ class Date
     {
         cout << month << "/" << day << "/" << year;
     }
+    void editDate(int y, int m, int d)
+    {
+        year = y;
+        month = m;
+        day = d;
+    }
 };
+
+#endif

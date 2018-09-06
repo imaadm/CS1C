@@ -1,3 +1,5 @@
+#ifndef _PROGH_
+#define _PROGH_
 
 #include <string>
 #include <iostream>
@@ -25,7 +27,8 @@ class Programmer:public Employee
        bool java = false;
     }
 
-    Programmer(int d, string super, int per, bool c, bool j, string n,int i,string p,int a, string t,string s):Employee(n,i,p,a,t,s)
+    Programmer(int d, string super, int per, bool c, bool j, string n,int i,string p,int a, string t,string s,int y, int m, int day)
+    :Employee(n,i,p,a,t,s,y,m,day)
     {
        dept = d;
        sup = super;
@@ -42,3 +45,5 @@ class Programmer:public Employee
 
     }
 };
+
+#endif

@@ -1,0 +1,61 @@
+Script started on Thu Sep  6 01:03:11 2018
+[?1034hbash-3.2$ date
+Thu Sep  6 01:03:13 PDT 2018
+bash-3.2$ ls -l
+total 42232
+-rwxr-xr-x  1 imaad  staff    36348 Sep  6 01:02 a.out
+-rw-r--r--  1 imaad  staff      553 Sep  6 00:57 date.h
+-rw-r--r--  1 imaad  staff  5378084 Sep  6 01:02 date.h.gch
+-rw-r--r--  1 imaad  staff     1259 Sep  6 00:57 employee.h
+-rw-r--r--  1 imaad  staff  5385348 Sep  6 01:02 employee.h.gch
+-rw-r--r--  1 imaad  staff     1441 Sep  6 01:02 hw03.cpp
+-rw-r--r--  1 imaad  staff       43 Sep  6 01:03 hw03.scr
+-rw-r--r--  1 imaad  staff      210 Sep  6 00:35 makefile
+-rw-r--r--  1 imaad  staff      898 Sep  6 00:58 programmer.h
+-rw-r--r--  1 imaad  staff  5392208 Sep  6 01:02 programmer.h.gch
+-rw-r--r--  1 imaad  staff      787 Sep  6 00:57 software.h
+-rw-r--r--  1 imaad  staff  5390396 Sep  6 01:02 software.h.gch
+bash-3.2$ ls -l[1Pdategit pushstatuscommit -m "final hw02"[C[C[C[C[C[C[C[C[C[Ccd CS1C[Kgit commit -m "final hw02"[C[C[C[C[C[C[C[C[C[C[C[C[C[Cstatus[K[2Ppush[4Pdatels -l[Kls -l[Kg++ hw03.cpp date.h employee.h programmer.h software.h
+clang: [0;1;35mwarning: [0mtreating 'c-header' input as 'c++-header' when in C++ mode, this behavior is deprecated [-Wdeprecated][0m
+clang: [0;1;35mwarning: [0mtreating 'c-header' input as 'c++-header' when in C++ mode, this behavior is deprecated [-Wdeprecated][0m
+clang: [0;1;35mwarning: [0mtreating 'c-header' input as 'c++-header' when in C++ mode, this behavior is deprecated [-Wdeprecated][0m
+clang: [0;1;35mwarning: [0mtreating 'c-header' input as 'c++-header' when in C++ mode, this behavior is deprecated [-Wdeprecated][0m
+bash-3.2$ ls -l
+total 42232
+-rwxr-xr-x  1 imaad  staff    36348 Sep  6 01:03 a.out
+-rw-r--r--  1 imaad  staff      553 Sep  6 00:57 date.h
+-rw-r--r--  1 imaad  staff  5378084 Sep  6 01:03 date.h.gch
+-rw-r--r--  1 imaad  staff     1259 Sep  6 00:57 employee.h
+-rw-r--r--  1 imaad  staff  5385348 Sep  6 01:03 employee.h.gch
+-rw-r--r--  1 imaad  staff     1441 Sep  6 01:02 hw03.cpp
+-rw-r--r--  1 imaad  staff     1185 Sep  6 01:03 hw03.scr
+-rw-r--r--  1 imaad  staff      210 Sep  6 00:35 makefile
+-rw-r--r--  1 imaad  staff      898 Sep  6 00:58 programmer.h
+-rw-r--r--  1 imaad  staff  5392208 Sep  6 01:03 programmer.h.gch
+-rw-r--r--  1 imaad  staff      787 Sep  6 00:57 software.h
+-rw-r--r--  1 imaad  staff  5390396 Sep  6 01:03 software.h.gch
+bash-3.2$ ./a.out 
+Defaults: 
+Name  | Employee ID | Phone Number |  Age  |  Title  |  Salary  | Date Hired 
+
+0 | None | 0 | 0 | Empty | 000-000-0000 | 0 | Student | $0 | 0/0/0
+0 |  | 0 | 0 | 0 | Empty | 000-000-0000 | 0 | Student | $0 | 0/0/0
+Empty | 000-000-0000 | 0 | Student | $0 | 0/0/0
+
+
+Name  | Employee ID | Phone Number |  Age  |  Title  |  Salary  | Date Hired 
+
+4 | Bossman | 5 | 7 | Sania | 859-310-4683 | 25 | Software Design | $101,000 | 10/4/2017
+3 | Bosser | 9 | 1 | 1 | Imaad | 958-196-4721 | 35 | Developer | $104,000 | 6/11/2019
+Joe | 374-958-4050 | 45 | Average | $70,000 | 3/24/1993
+
+
+Edited:
+Name  | Employee ID | Phone Number |  Age  |  Title  |  Salary  | Date Hired 
+
+4 | Bossman | 5 | 7 | Sania | 859-310-4683 | 21 | Software Design | $101,000 | 10/4/2017
+3 | Bosser | 9 | 1 | 1 | Daami | 958-196-4721 | 35 | Developer | $104,000 | 6/11/2019
+Joe | 374-958-4050 | 45 | Average | $75,000 | 3/24/1993bash-3.2$ exit
+exit
+
+Script done on Thu Sep  6 01:04:14 2018
