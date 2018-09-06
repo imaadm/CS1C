@@ -1,0 +1,70 @@
+
+Object-Oriented Design (OOD) and Object-Oriented Programming (OOP) 
+    3 fundamental principles of OOD:
+        Encapsulation combining data and operations (methods) into one unit
+        Inheritance Creating new objects from existing ones
+        Polymorphism (dynamic allocation); using same expression to denote different operations
+
+    OOD:
+        
+
+
+
+Operator Overloading
+    Essentially creates a new function out of an operator 
+    ex: 
+        myClock.printTime() vs cout << myClock
+        myClock.incrementSeconds() vs myClock++
+        myClock.equalTime(clockB) vs myClock == clockB //compareto
+
+    syntax:
+    returnType operator operatorSymbol(formal parameters)
+    
+    can not overload the . and -> (pointer) operators
+    can't change precedence of operators; order of operation (PEMDAS) stays the same
+    the operator works the same with built-in types; 1 + 1 = 2 will always be the case for ints
+
+    this pointer: hidden pointer that every object of a class has
+        when an object invokes a member function, this is referenced
+
+Friend function
+    A friend function of a class is a nonmember function of the class that has access to all members of the class
+    Use reserved word friend in function prototype in class definition
+    ex:
+    class classFriend
+    {
+        friend void two(params);
+    }
+
+overloading example Clock
+class Clock
+{
+
+    friend bool operator==(constclock& myClock, const Clock& yourClock)); //friend version of overloaded operator
+
+    public:
+    bool operator==(constclock& myClock, const Clock& yourClock) //only one clock in parameter because left hand side of ==
+                                                    invokes the operator to the right side
+        {
+        if (clockA.hours == clockB.hours && clockA.min == clockB.min && clockA.sec == clockB.sec)
+          return true;
+        return false;  
+        }
+
+
+        bool operator==(const clockType& yourClock) //only one clock in parameter because left hand side of ==
+                                                    invokes the operator to the right side
+        {
+        if (clockA == clockB)
+          return true;
+        return false;  
+        }
+        //this results in myClock == yourClock being equal to myClock.operator==(yourClock);
+    
+
+    private:
+    int hours;
+    int min;
+    int sec;
+}
+
