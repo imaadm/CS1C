@@ -1,0 +1,50 @@
+overloading example Clock 
+class Clock
+{
+
+    friend bool operator==(constclock& myClock, const Clock& yourClock)); //friend version of overloaded operator ==
+
+    public:
+    bool operator==(constclock& myClock, const Clock& yourClock) //only one clock in parameter because left hand side of == invokes the operator to the right side
+    {   
+        if (clockA.hours == clockB.hours && clockA.min == clockB.min && clockA.sec == clockB.sec)
+          return true;
+        return false;  
+    }
+
+    bool operator==(const clockType& yourClock) //only one clock in parameter because left hand side of ==
+                                                invokes the operator to the right side
+    {
+        if (clockA == clockB)
+          return true;
+        return false;  
+    }
+    //this results in myClock == yourClock being equal to myClock.operator==(yourClock);
+
+        
+}
+
+    private:
+    int hours;
+    int min;
+    int sec;
+}
+class Clock
+{
+
+    friend ostream& operator<<(ostream&, const Clock& c); //overloaded ostream <<
+
+    public:
+    ostream& operator<<(ostream& osOut, const Clock& c)
+    {
+        osOut << c.hours << ":";
+        osOut << c.minutes << ":";
+        osOut << c.seconds; 
+    return osOut;
+    }
+    
+    private:
+    int hours;
+    int min;
+    int sec;
+}

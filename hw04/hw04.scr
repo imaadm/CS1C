@@ -1,0 +1,37 @@
+Script started on Tue Sep 11 00:14:26 2018
+[?1034hbash-3.2$ date
+Tue Sep 11 00:14:28 PDT 2018
+bash-3.2$ ls -l
+total 42264
+-rwxr-xr-x  1 imaad  staff    40316 Sep 11 00:14 a.out
+-rw-r--r--  1 imaad  staff      553 Sep  9 01:37 date.h
+-rw-r--r--  1 imaad  staff  5378084 Sep 11 00:14 date.h.gch
+-rw-r--r--  1 imaad  staff     2122 Sep 11 00:12 employee.h
+-rw-r--r--  1 imaad  staff  5389724 Sep 11 00:14 employee.h.gch
+-rw-r--r--  1 imaad  staff     2075 Sep 11 00:14 hw04.cpp
+-rw-r--r--  1 imaad  staff       43 Sep 11 00:14 hw04.scr
+-rw-r--r--  1 imaad  staff      210 Sep 10 23:57 makefile
+-rw-r--r--  1 imaad  staff      898 Sep  9 01:37 programmer.h
+-rw-r--r--  1 imaad  staff  5396792 Sep 11 00:14 programmer.h.gch
+-rw-r--r--  1 imaad  staff      787 Sep  9 01:37 software.h
+-rw-r--r--  1 imaad  staff  5394704 Sep 11 00:14 software.h.gch
+bash-3.2$ ls -l[1Pdateexit./a.out g++ hw04.cpp date.h employee.h programmer.h software.h
+clang: [0;1;35mwarning: [0mtreating 'c-header' input as 'c++-header' when in C++ mode, this behavior is deprecated [-Wdeprecated][0m
+clang: [0;1;35mwarning: [0mtreating 'c-header' input as 'c++-header' when in C++ mode, this behavior is deprecated [-Wdeprecated][0m
+clang: [0;1;35mwarning: [0mtreating 'c-header' input as 'c++-header' when in C++ mode, this behavior is deprecated [-Wdeprecated][0m
+clang: [0;1;35mwarning: [0mtreating 'c-header' input as 'c++-header' when in C++ mode, this behavior is deprecated [-Wdeprecated][0m
+bash-3.2$ ./a.out 
+Friend Functions:
+Phone comparison: 0
+Adding to age: 29
+
+29
+Overloaded: 
+Phone comparison: 0
+Adding to age: 33
+
+Outputting Joe: 
+Joe | 374-958-4050 | 45 | Average | $70,000 | bash-3.2$ exit
+exit
+
+Script done on Tue Sep 11 00:14:42 2018
