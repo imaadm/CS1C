@@ -1,0 +1,26 @@
+Script started on Thu Sep 20 01:47:01 2018
+[?1034hbash-3.2$ date
+Thu Sep 20 01:47:02 PDT 2018
+bash-3.2$ ls -l
+total 96
+-rwxr-xr-x  1 imaad  staff  20860 Sep 19 23:52 a.out
+-rw-r--r--  1 imaad  staff    783 Sep 19 23:52 hw06.cpp
+-rw-r--r--  1 imaad  staff  11808 Sep 20 01:00 hw06.o
+-rw-r--r--  1 imaad  staff     43 Sep 20 01:47 hw06.scr
+-rw-r--r--  1 imaad  staff    205 Sep 20 01:23 makefile
+bash-3.2$ g++ hw06.cpp
+bash-3.2$ .[Kls -l
+total 96
+-rwxr-xr-x  1 imaad  staff  20860 Sep 20 01:47 a.out
+-rw-r--r--  1 imaad  staff    783 Sep 19 23:52 hw06.cpp
+-rw-r--r--  1 imaad  staff  11808 Sep 20 01:00 hw06.o
+-rw-r--r--  1 imaad  staff     43 Sep 20 01:47 hw06.scr
+-rw-r--r--  1 imaad  staff    205 Sep 20 01:23 makefile
+bash-3.2$ ./a.out 
+First swap: abcdefghijksrqponmltuvwxyz
+Second swap: abcdwvutsrqponmlkjihgfexyz
+Third swap: zyxwvutsrqponmlkjihgfedcba
+bash-3.2$ exit
+exit
+
+Script done on Thu Sep 20 01:47:40 2018

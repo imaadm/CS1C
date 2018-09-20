@@ -1,0 +1,41 @@
+
+int main()
+{
+    vector v1;
+    v1.pushback(1.2);
+
+    v1.pushback(12.7);
+
+    vector v2 = v1;
+    vector v2(v1);
+}
+
+
+
+
+
+class vector
+{
+    public:
+    vector()
+    {
+        size = 0;
+        space = 0;
+        elem = 0;
+    }
+    // copy constructor steps
+    1) copy constructor called
+        source obj passed to constructor
+    2) copy all static, non-pointed to data (such as size and space)
+
+    3) copy pointed to data from source to destination (elem)
+        use new operator to dynamiccaly allocate data (elem = new double*)
+        initialize dynamic data
+    4) if copy ASSIGNMENT, free the pointed-to data that already exists (using delete)
+
+    private:
+        int size;
+        int space;
+        double* elem;
+
+}

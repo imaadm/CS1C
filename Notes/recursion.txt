@@ -1,0 +1,62 @@
+
+Recursion: Solving a problem by reducing it to smaller versions of itself
+
+Recursive Definition: A definition in which something is defined in terms of a smaller version of itself
+
+Base case: Case for which the solution is directly obtained 
+
+General case: Repeating case which eventually reduces to the base case
+
+Recursive algorithms are implemented in recursive functions; functions that call themselves over and over
+
+Ex/
+
+factorial(n)
+{
+    n!
+}
+once factioral(n) reaches 1, it reaches the base case
+
+Types of recursion:
+
+• Directly recursive: a function that calls itself
+• Indirectly recursive: a function that calls another function and eventually results in the original function call
+• Tail recursive function: a recursive function in which the last statement executed is the recursive call
+
+Recursion vs Iteration (loops)
+
+iterative example:
+int factorial(int n)
+{
+    int sum = 1;
+    for (int i = n; i > 1; i--)
+       sum *= i;
+    return sum;
+}
+
+Recursion and interation both do similar things, but at varying levels of complexity and efficiency.
+
+Nature of the problem and the efficiency are key things to consider when choosing how to solve a problem.
+
+Recursion is typically better used in more complicated problems
+
+
+Copy constructor:
+
+Initializes the data the same as the original initialization.
+Leads to shallow copy of data if the class being copied has pointers, or objects being passed by value.
+
+Copy constructor automatically executes in three situations:
+– When an object is declared and initialized by using the value of another object
+– When an object is passed by value as a parameter 
+– When the return value of a function is an object
+
+Override copy constructor to avoid shallow copy of data.
+
+className (const className& otherObject);
+
+For classes with pointer member variables, three things are normally done:
+– Include the destructor in the class
+– Overload the assignment operator for the class 
+– Include the copy constructor
+
