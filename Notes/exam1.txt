@@ -1,0 +1,85 @@
+/*
+*  cityTempExtend.h
+*
+*  Author: jjkath
+*/
+#ifndef CITYTEMPEXTEND_H_
+#define CITYTEMPEXTEND_H_
+#include <iostream>
+using namespace std;
+#include "cityTemp.h"
+class CityTempLatitudeLongitude : public CityTemp
+{
+  private:
+    // data members
+    float *latitude;
+    float *longitude;
+
+  public:
+    // constructors
+    CityTempLatitudeLongitude() : CityTemp()
+    // default constructor
+    {
+        latitude = new float[NUMBER_ROWS];
+        longitude = new float[NUMBER_ROWS];
+        for (int i = 0; i < NUMBER_ROWS; i++)
+        {
+            latitude[i] = 0.0;
+            longitude[i] = 0.0;
+        }
+    }
+    CityTempLatitudeLongitude(float latIn[], float longIn[], string namesIn[], int tempsIn[][NUMBER_COLS]) : CityTemp(namesIn, tempsIn)
+    // alternate constructor
+    {
+        latitude = new float[NUMBER_ROWS];
+        longitude = new float[NUMBER_ROWS];
+        for (int i = 0; i < NUMBER_ROWS; i++)
+        {
+            latitude[i] = latIn[i];
+            longitude[i] = longIn[i];
+        }
+    }
+    ~CityTempLatitudeLongitude()
+    // destructor
+    {
+        delete[] latitude;
+        delete[] longitude;
+    }
+    CityTempLatitudeLongitude(const CityTempLatitudeLongitude &
+                                  cityTempLLIn) : CityTemp(cityTempLLIn)
+    // copy constructor
+    {
+        latitude = new float[NUMBER_ROWS];
+        longitude = new float[NUMBER_ROWS];
+        for (int i = 0; i < NUMBER_ROWS; i++)
+        {
+            latitude[i] = cityTempLLIn.latitude[i];
+            longitude[i] = cityTempLLIn.longitude[i];
+        }
+    }
+    // member functions
+    void Print() const
+    {
+        CityTemp::Print();
+        cout << endl;
+        for (int i = 0; i < NUMBER_ROWS; i++)
+        {
+            cout << "City Latitude: " << latitude[i] << endl;
+            cout << "City Longitude: " << longitude[i] << endl;
+        }
+        cout << endl;
+    }
+    // overloaded operators
+    friend ostream &operator<<(ostream &os, const CityTempLatitudeLongitude &cityTempLLIn)
+    {
+        os << CityTemp(cityTempLLIn);
+        for (int i = 0; i < NUMBER_ROWS; i++)
+        {
+            os << "City Latitude: " << cityTempLLIn.latitude[i] << endl;
+            os << "City Longitude: " << cityTempLLIn.longitude[i] << endl;
+        }
+        os << endl;
+        return os;
+    }
+};
+#endif /* CITYTEMPEXTEND_H_ */

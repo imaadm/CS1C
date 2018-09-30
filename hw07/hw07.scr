@@ -1,0 +1,57 @@
+Script started on Tue Sep 25 01:21:39 2018
+[?1034hbash-3.2$ date
+Tue Sep 25 01:21:42 PDT 2018
+bash-3.2$ ls -l
+total 136
+-rwxr-xr-x@ 1 imaad  staff  32204 Sep 25 01:17 hw07
+-rw-r--r--  1 imaad  staff   3168 Sep 25 01:21 hw07.cpp
+drwxr-xr-x  3 imaad  staff     96 Sep 24 20:26 hw07.dSYM
+-rw-r--r--  1 imaad  staff     43 Sep 25 01:21 hw07.scr
+-rw-r--r--  1 imaad  staff   2043 Sep 25 01:20 hw07ec.cpp
+-rw-r--r--  1 imaad  staff    594 Sep 25 01:09 hw07ec.h
+-rw-r--r--  1 imaad  staff  14756 Sep 25 01:16 hw07ec.o
+-rw-r--r--  1 imaad  staff    307 Sep 24 20:21 makefile
+bash-3.2$ ./a[K[K[Kmake all
+c++    -c -o hw07ec.o hw07ec.cpp
+g++ -std=c++14 -Wall -g hw07.cpp -o hw07 hw07ec.o
+bash-3.2$ ./hw07
+Original inventory
+|Name         |  Cost  |  Quantity  |
+|Nike basketball shoes  |  145.99  |  22  |
+|Under Armour T-shirt  |  29.99  |  33  |
+|Brooks running shoes  |  111.44  |  11  |
+|Asics running shoes  |  165.88  |  20  |
+|Nike shorts  |  45.77  |  77  |
+
+
+What would you like to purchase? (input item number 1-5):1
+Amount: 2
+Buy another item? (Y/N)y
+What would you like to purchase? (input item number 1-5):2
+Amount: 3
+Buy another item? (Y/N)y
+What would you like to purchase? (input item number 1-5):5
+Amount: 4
+Buy another item? (Y/N)y
+What would you like to purchase? (input item number 1-5):3
+Amount: 1
+Buy another item? (Y/N)n
+|Name         |  Cost  |  Quantity  |
+|Nike basketball shoes  |  145.99  |  2  |
+|Under Armour T-shirt  |  29.99  |  3  |
+|Nike shorts  |  45.77  |  4  |
+|Brooks running shoes  |  111.44  |  1  |
+
+Subotal: $676.47
+Total cost (with tax): $732.279
+Post-purchase inventory
+|Name         |  Cost  |  Quantity  |
+|Nike basketball shoes  |  145.99  |  22  |
+|Under Armour T-shirt  |  29.99  |  33  |
+|Brooks running shoes  |  111.44  |  11  |
+|Asics running shoes  |  165.88  |  20  |
+|Nike shorts  |  45.77  |  77  |
+bash-3.2$ exit
+exit
+
+Script done on Tue Sep 25 01:22:39 2018
