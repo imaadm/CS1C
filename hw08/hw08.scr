@@ -1,0 +1,83 @@
+Script started on Mon Oct  8 19:55:41 2018
+[?1034hbash-3.2$ ./a.out 
+
+************************************** 
+*           Running HW08             * 
+*      Programmed by First Last      * 
+*      CS1C Date & Time              * 
+************************************** 
+
+increment pointer vs reference
+
+100
+105
+100
+25
+25
+100
+101
+
+print array of doubles forward and backward
+
+0x7ffee3888ad0
+0x7ffee3888ad8
+0x7ffee3888ae0
+0x7ffee3888ae8
+0x7ffee3888af0
+0x7ffee3888af8
+0x7ffee3888b00
+0x7ffee3888b08
+0x7ffee3888b10
+0x7ffee3888b18
+
+0x7ffee3888b18
+0x7ffee3888b10
+0x7ffee3888b08
+0x7ffee3888b00
+0x7ffee3888af8
+0x7ffee3888af0
+0x7ffee3888ae8
+0x7ffee3888ae0
+0x7ffee3888ad8
+0x7ffee3888ad0
+
+
+print 2d array of doubles
+
+1 2 3 4 5 
+6 7 8 9 10 
+11 12 13 14 15 
+16 17 18 19 20 
+21 22 23 24 25 
+
+
+
+
+
+
+
+
+ri, ri2, ri3 before delete
+
+100
+200
+0x7f7f3b4003b0
+
+ri, ri2, ri3 after delete
+
+0
+200
+0x7f7f3b4003b0
+
+0 1342177280 0 
+0 1342177280 0 
+0 1342177280 0 
+
+
+
+
+
+bash-3.2$ exit
+exit
+
+Script done on Mon Oct  8 19:55:47 2018

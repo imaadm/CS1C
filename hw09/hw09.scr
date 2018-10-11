@@ -1,0 +1,16 @@
+Script started on Thu Oct 11 00:21:57 2018
+[?1034hbash-3.2$ ls 
+a.out		hw09.scr	rectangle.h.gch	triangle.h
+hw09.cpp	makefile	shape.h		triangle.h.gch
+hw09.o		rectangle.h	shape.h.gch
+bash-3.2$ date
+Thu Oct 11 00:22:03 PDT 2018
+bash-3.2$ ./a.out 
+Perimeter: 34
+Area: 72
+Perimeter: 12
+Area: 6
+bash-3.2$ exit
+exit
+
+Script done on Thu Oct 11 00:22:11 2018
