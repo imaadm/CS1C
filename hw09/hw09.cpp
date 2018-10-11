@@ -2,6 +2,7 @@
 #include "rectangle.h"
 #include "triangle.h"
 #include <iostream>
+//virtual functions and abstract classes
 
 using namespace std;
 

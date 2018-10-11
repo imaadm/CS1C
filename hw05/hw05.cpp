@@ -4,6 +4,7 @@
 #include <algorithm>
 #include <random>
 using namespace std;
+//intro to vectors
 
 //Q1: The STL is the Standard Template Library. It provides containers, algorithms, and iterators.
 // A vector is essentially a dynamic array that can resize itself. The storage is automatically handled by a container,

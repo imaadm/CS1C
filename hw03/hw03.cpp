@@ -4,7 +4,7 @@
 #include "employee.h"
 #include "programmer.h"
 #include "software.h"
-
+//OOP program
 int main ()
 {
     Architect arch1;

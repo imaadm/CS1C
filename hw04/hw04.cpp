@@ -5,6 +5,7 @@
 #include "programmer.h"
 #include "software.h"
 
+//class inheritance program
 using namespace std;
 
 int main ()

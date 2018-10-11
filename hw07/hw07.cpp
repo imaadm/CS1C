@@ -10,6 +10,7 @@ string purchase;
 char item;
 } // namespace inputspace
 
+//inventory management with pointers
 int main()
 {
 
