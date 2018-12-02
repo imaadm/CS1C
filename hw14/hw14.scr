@@ -1,0 +1,71 @@
+Script started on Sat Dec  1 18:26:13 2018
+[?1034hbash-3.2$ ls -l
+total 10680
+-rwxr-xr-x  1 imaad  staff    22100 Dec  1 18:23 a.out
+-rw-r--r--  1 imaad  staff     1084 Dec  1 18:22 hw14.cpp
+-rw-r--r--  1 imaad  staff       43 Dec  1 18:26 hw14.scr
+-rw-r--r--  1 imaad  staff     3185 Dec  1 18:18 list.h
+-rw-r--r--  1 imaad  staff  5423268 Dec  1 18:23 list.h.gch
+-rw-r--r--  1 imaad  staff      283 Dec  1 18:24 makefile
+bash-3.2$ date
+Sat Dec  1 18:26:19 PST 2018
+bash-3.2$ ./a.out 
+1
+2
+3
+4
+5
+
+6.5
+7.5
+8.5
+9.5
+10.5
+
+Copy example
+1
+2
+3
+4
+5
+
+Reversed
+5
+4
+3
+2
+1
+
+10.5
+9.5
+8.5
+7.5
+6.5
+
+Deleted node 3
+1
+2
+4
+5
+
+6.5
+7.5
+9.5
+10.5
+
+Added node
+1
+2
+4
+5
+3
+
+6.5
+7.5
+9.5
+10.5
+8.4
+bash-3.2$ exit
+exit
+
+Script done on Sat Dec  1 18:26:30 2018
